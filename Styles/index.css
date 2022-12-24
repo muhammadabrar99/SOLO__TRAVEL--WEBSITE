@@ -34,3 +34,25 @@ a {
     font-size: 25px;
     font-weight: 600;
 }
+
+/* Header Section */
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    border-bottom: 1px solid rgba(219, 219, 219, 1);
+    display: flex;
+    align-items: center;
+    padding: 20px 50px;
+    z-index: 1000;
+}
+
+header .logo {
+    display: flex;
+    flex: 1;
+}
+
+header .logo img {
+    width: 100px;
+}
