@@ -98,3 +98,16 @@ header nav ul li a:hover {
     height: 100vh;
 }
 
+.crousel .crousel_item,
+.crousel .crousel_item_hidden {
+    display: none;
+}
+
+.crousel .crousel_item_visible {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: #211d1d;
+}
+
