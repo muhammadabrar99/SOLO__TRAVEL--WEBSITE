@@ -132,3 +132,9 @@ header nav ul li a:hover {
     gap: 1rem;
 }
 
+.crousel .hero_text h1 {
+    color: rgba(219, 219, 219, 1);
+    text-shadow: 1px 3px 10px black;
+}
+
+
