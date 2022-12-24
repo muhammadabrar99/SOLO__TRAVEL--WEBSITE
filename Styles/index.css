@@ -56,3 +56,24 @@ header .logo {
 header .logo img {
     width: 100px;
 }
+
+header nav {
+    display: flex;
+    justify-content: center;
+    flex: 2;
+}
+
+header nav ul {
+    display: flex;
+    gap: 2rem;
+}
+
+header nav ul li a {
+    color: white;
+    border-bottom: 2px solid white;
+}
+
+header nav ul li a:hover {
+    border-bottom: 2px solid black;
+}
+
