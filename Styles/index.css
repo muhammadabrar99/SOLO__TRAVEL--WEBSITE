@@ -14,3 +14,23 @@ body {
     list-style: none;
     line-height: 25px;
 }
+
+p {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+a {
+    font-size: 18px;
+    color: rgba(8, 8, 8, 1);
+}
+
+.primary_heading {
+    font-size: 40px;
+    font-weight: 900;
+}
+
+.secondry_heading {
+    font-size: 25px;
+    font-weight: 600;
+}
