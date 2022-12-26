@@ -160,3 +160,36 @@ header nav ul li a:hover {
     }
 }
 
+
+@media (max-width: 520px) {
+    .primary_heading{
+        font-size: 28px;
+    }
+
+    .secondry_heading{
+        font-size: 16px;
+    }
+
+    header {
+        padding: 15px;
+        justify-content: space-between;
+    }
+
+    header .logo img {
+        width: 70px;
+    }
+
+    header nav {
+        position: absolute;
+        width: 100%;
+        top: -360px;
+        left: 0;
+        justify-content: center;
+        text-align: center;
+        z-index: -1;
+    }
+    
+    header nav.active {
+        top: 60px;
+    }
+
