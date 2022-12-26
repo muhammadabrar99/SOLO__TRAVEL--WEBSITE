@@ -146,3 +146,17 @@ header nav ul li a:hover {
     }
 }
 
+@media (max-width: 768px) {
+    header {
+        padding: 20px;
+    }
+
+    header .logo {
+        flex: 0;
+    }
+
+    header nav ul {
+        gap: 20px;
+    }
+}
+
