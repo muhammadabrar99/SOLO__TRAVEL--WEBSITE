@@ -224,3 +224,16 @@ header nav ul li a:hover {
     } 
 }
 
+@media (max-width: 320px) {
+    .primary_heading{
+        font-size: 17px;
+    }
+
+    .secondry_heading{
+        font-size: 10px;
+    }
+
+    header #menu_bars{
+        margin: 0;
+    }
+}
