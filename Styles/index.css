@@ -139,3 +139,10 @@ header nav ul li a:hover {
     text-shadow: 1px 3px 10px black;
 }
 
+/* Media Querries */
+@media (max-width: 991px) {
+    header nav {
+        justify-content: flex-end;
+    }
+}
+
