@@ -193,3 +193,34 @@ header nav ul li a:hover {
         top: 60px;
     }
 
+    header nav ul {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 15px;
+    }
+    
+    header nav ul li {
+        width: 100%;
+        background: rgba(219, 219, 219, 1);
+        border: 1px solid white;
+        border-radius: 3px;
+        padding: 5px 10px;
+    }
+    
+    header nav ul li a {
+        color: #211d1d;
+        border: none;
+    }
+
+    header #menu_bars {
+        display: initial;
+    }
+
+    /* Hero Section */
+    .crousel .hero_text{
+        gap: 5px;
+    } 
+}
+
