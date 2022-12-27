@@ -10,3 +10,7 @@ window.onscroll = () => {
   menuBar.classList.remove("fa-times");
   navBar.classList.remove("active");
 };
+
+const slides = document.getElementsByClassName("crousel_item");
+let slidePosition = 0;
+const totalSlides = slides.length;
