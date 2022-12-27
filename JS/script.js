@@ -21,3 +21,9 @@ function hideAllSlides() {
     slide.classList.add("crousel_item-hidden");
   }
 }
+
+setInterval(function () {
+    hideAllSlides();
+    if (slidePosition === totalSlides - 1) {
+      slidePosition = 0;
+    } else {
