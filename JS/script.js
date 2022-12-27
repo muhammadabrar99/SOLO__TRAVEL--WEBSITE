@@ -23,7 +23,11 @@ function hideAllSlides() {
 }
 
 setInterval(function () {
-    hideAllSlides();
-    if (slidePosition === totalSlides - 1) {
-      slidePosition = 0;
-    } else {
+  hideAllSlides();
+  if (slidePosition === totalSlides - 1) {
+    slidePosition = 0;
+  } else {
+    slidePosition++;
+  }
+  slides[slidePosition].classList.add("crousel_item_visible");
+}, 4000);
