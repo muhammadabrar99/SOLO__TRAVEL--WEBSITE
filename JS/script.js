@@ -14,3 +14,10 @@ window.onscroll = () => {
 const slides = document.getElementsByClassName("crousel_item");
 let slidePosition = 0;
 const totalSlides = slides.length;
+
+function hideAllSlides() {
+  for (let slide of slides) {
+    slide.classList.remove("crousel_item_visible");
+    slide.classList.add("crousel_item-hidden");
+  }
+}
