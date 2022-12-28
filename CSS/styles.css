@@ -1,8 +1,7 @@
 *, ::before, ::after {
     margin: 0;
     box-sizing: border-box;
-    color: var(--colorBlack);
-    line-height: 25px;
+    transition: linear 0.3s;
 }
 
 /* root */
@@ -13,18 +12,13 @@
     --pureWhite: #fff;
     --pureBlack: #000;
     --colorYellow: #FDC702;
-    --colorSky : #029D9D;
+    --colorSky: #029D9D;
 
     /* Font Size */
     --fontSmall: 15px;
     --fontMedium: 18px;
     --fontLarge: 25px;
     --fontXLarge: 40px;
-
-    /* transitions */
-    --transition-1: 5s;
-    --transition-2: 2.5s;
-
 }
 
 /* Typography */
@@ -35,6 +29,7 @@ html {
 
 body {
     font-family: 'Source Sans Pro', sans-serif;
+    line-height: 25px;
 }
 
 a,
@@ -129,18 +124,13 @@ header nav ul li a {
 #menu_bars {
     display: none;
     color: var(--colorWhite);
-    font-size: 18px;
-    border: 1px solid var(--pureWhite);
-    border-radius: 4px;
-    padding: 4px 8px;
+    font-size: var(--fontLarge);
     margin-right: 20px;
 }
 
 /* Hero Section */
 .hero {
-    /* position: relative; */
     display: flex;
-    /* top: 75px; */
 }
 
 .hero .container {
@@ -167,7 +157,6 @@ header nav ul li a {
 }
 
 .hero .container .right img {
-    /* position: absolute; */
     width: 100%;
     transform: scale(0.8);
 }
@@ -226,6 +215,7 @@ header nav ul li a {
         position: absolute;
         width: 100%;
         top: -360px;
+        background: var(--colorSky);
         left: 0;
         justify-content: center;
         text-align: center;
@@ -233,7 +223,7 @@ header nav ul li a {
     }
 
     header nav.active {
-        top: 60px;
+        top: 74px;
     }
 
     header nav ul {
