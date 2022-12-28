@@ -1,33 +1,82 @@
-* {
-    font-family: 'Source Sans Pro', sans-serif;
-    text-decoration: none;
-    list-style: none;
+*, ::before, ::after {
     margin: 0;
     box-sizing: border-box;
-    transition: all 0.5s;
-    color: rgba(8, 8, 8, 1);
+    color: var(--colorBlack);
     line-height: 25px;
 }
 
+/* root */
+:root {
+    /* Colors */
+    --colorBlack: rgba(8, 8, 8, 3);
+    --colorWhite: rgba(219, 219, 219, 1);
+    --pureWhite: #fff;
+    --pureBlack: #000;
+
+    /* Font Size */
+    --fontSmall: 15px;
+    --fontMedium: 18px;
+    --fontLarge: 25px;
+    --fontXLarge: 40px;
+
+    /* transitions */
+    --transition-1: 5s;
+    --transition-2: 2.5s;
+
+}
+
 /* Typography */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+a,
+img,
+span,
+input,
+button {
+    display: block;
+}
+
+li, a {
+    list-style: none;
+}
+
+a {
+    font-size: var(--fontMedium);
+    text-decoration: none;
+}
+
+input,
+button {
+    font: inherit;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
 
 p {
     font-size: 18px;
     font-weight: 500;
 }
 
-a {
-    font-size: 18px;
-    color: rgba(8, 8, 8, 1);
+/* reUsed Classes */
+.section {
+    padding: 40px;
 }
 
 .primary_heading {
-    font-size: 40px;
+    font-size: var(--fontXLarge);
     font-weight: 900;
 }
 
 .secondry_heading {
-    font-size: 25px;
+    font-size: var(--fontLarge);
     font-weight: 600;
 }
 
@@ -38,7 +87,7 @@ header {
     width: 100%;
     top: 0;
     left: 0;
-    border-bottom: 1px solid rgba(219, 219, 219, 1);
+    border-bottom: 1px solid var(--colorWhite);
     display: flex;
     align-items: center;
     padding: 20px 50px;
@@ -66,8 +115,8 @@ header nav ul {
 }
 
 header nav ul li a {
-    color: white;
-    border-bottom: 2px solid white;
+    color: var(--pureWhite);
+    border-bottom: 2px solid var(--pureWhite);
 }
 
 header nav ul li a:hover {
@@ -76,9 +125,9 @@ header nav ul li a:hover {
 
 #menu_bars {
     display: none;
-    color: white;
+    color: var(--colorWhite);
     font-size: 18px;
-    border: 1px solid rgb(255, 255, 255);
+    border: 1px solid var(--pureWhite);
     border-radius: 4px;
     padding: 4px 8px;
     margin-right: 20px;
@@ -123,7 +172,7 @@ header nav ul li a:hover {
     height: 100%;
     top: 0;
     left: 0;
-    color: rgba(219, 219, 219, 1);
+    color: var(--colorWhite);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -132,12 +181,12 @@ header nav ul li a:hover {
 }
 
 .crousel .hero_text h1 {
-    color: rgba(219, 219, 219, 1);
+    color: var(--colorWhite);
     text-shadow: 1px 3px 10px black;
 }
 
 .crousel .hero_text p {
-    color: rgba(219, 219, 219, 1);
+    color: var(--colorWhite);
     text-shadow: 1px 3px 10px black;
 }
 
@@ -164,11 +213,11 @@ header nav ul li a:hover {
 
 
 @media (max-width: 520px) {
-    .primary_heading{
+    .primary_heading {
         font-size: 28px;
     }
 
-    .secondry_heading{
+    .secondry_heading {
         font-size: 16px;
     }
 
@@ -190,7 +239,7 @@ header nav ul li a:hover {
         text-align: center;
         z-index: -1;
     }
-    
+
     header nav.active {
         top: 60px;
     }
@@ -202,15 +251,15 @@ header nav ul li a:hover {
         flex-direction: column;
         padding: 15px;
     }
-    
+
     header nav ul li {
         width: 100%;
-        background: rgba(219, 219, 219, 1);
+        background: var(--colorWhite);
         border: 1px solid white;
         border-radius: 3px;
         padding: 5px 10px;
     }
-    
+
     header nav ul li a {
         color: #211d1d;
         border: none;
@@ -221,21 +270,21 @@ header nav ul li a:hover {
     }
 
     /* Hero Section */
-    .crousel .hero_text{
+    .crousel .hero_text {
         gap: 5px;
-    } 
+    }
 }
 
 @media (max-width: 320px) {
-    .primary_heading{
+    .primary_heading {
         font-size: 17px;
     }
 
-    .secondry_heading{
+    .secondry_heading {
         font-size: 10px;
     }
 
-    header #menu_bars{
+    header #menu_bars {
         margin: 0;
     }
 }
