@@ -19,6 +19,10 @@
     --fontMedium: 18px;
     --fontLarge: 25px;
     --fontXLarge: 40px;
+
+    /* Font Families */
+    --primaryFontFamily: 'Poppins', sans-serif;
+    --secondryFontFamily: 'Dancing Script', cursive;
 }
 
 /* Typography */
@@ -28,16 +32,8 @@ html {
 }
 
 body {
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: var(--primaryFontFamily);
     line-height: 25px;
-}
-
-a,
-img,
-span,
-input,
-button {
-    display: block;
 }
 
 li, a {
@@ -59,7 +55,6 @@ button {
 
 p {
     font-size: 18px;
-    font-weight: 500;
 }
 
 /* reUsed Classes */
@@ -118,7 +113,10 @@ header nav ul {
 
 header nav ul li a {
     color: var(--pureWhite);
-    font-weight: 600;
+}
+
+header nav ul li a:hover {
+    color: var(--colorWhite);
 }
 
 #menu_bars {
