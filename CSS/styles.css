@@ -65,7 +65,6 @@ p {
     position: relative;
     top: 75px;
     width: 100%;
-    height: calc(100vh - 75px);
     padding: 20px;
 }
 
@@ -142,9 +141,9 @@ header nav ul li a:hover {
 }
 
 /* Hero Section */
-.hero {
+/* .hero {
     display: flex;
-}
+} */
 
 .hero .container {
     display: flex;
@@ -156,7 +155,7 @@ header nav ul li a:hover {
     flex-direction: column;
     gap: 1rem;
     flex: 1;
-    padding: 100px;
+    padding-left: 100px;
 }
 
 .hero .container .left .heroTitle {
@@ -189,14 +188,6 @@ header nav ul li a:hover {
     flex: 1;
 }
 
-.hero .container .right .circle {
-    position: absolute;
-    width: 420px;
-    height: 420px;
-    background: var(--colorYellow);
-    border-radius: 50%;
-}
-
 .hero .container .right img {
     width: 100%;
     height: 100%;
@@ -215,18 +206,13 @@ header nav ul li a:hover {
 
 /* Media Querries */
 @media (max-width : 1200px) {
-    .hero .container .left{
-        padding: 30px;
+    .hero .container .left {
+        padding-left: 50px;
     }
 
-    .hero .container .right .circle{
-        width: 320px;
-        height: 320px;
-    }
-
-    .hero .container .right img{
-        width: 100%;
-        height: 100%;
+    .hero .container .right .circle {
+        width: 360px;
+        height: 360px;
     }
 }
 
@@ -234,6 +220,24 @@ header nav ul li a:hover {
     header nav {
         justify-content: flex-end;
     }
+
+    .hero .container .left {
+        padding: 20px;
+    }
+
+    .hero .container .left .heroTitle {
+        font-size: 3rem;
+    }
+
+    .hero .container .left .heroSubTitle {
+        font-size: var(--fontLarge);
+    }
+
+    .hero .container .circle{
+        max-width: 300px;
+        max-height: 300px;
+    }
+
 }
 
 @media (max-width: 768px) {
@@ -247,6 +251,10 @@ header nav ul li a:hover {
 
     header nav ul {
         gap: 20px;
+    }
+
+    .hero .container{
+        flex-direction: column;
     }
 }
 
