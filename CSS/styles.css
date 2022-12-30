@@ -194,6 +194,38 @@ header nav ul li a:hover {
     transform: scale(0.9);
 }
 
+.shape {
+    display: block;
+    position: absolute;
+    animation: rotate 8s linear infinite;
+}
+
+.shape-1 {
+    top: 60px;
+    left: 47%;
+}
+
+.shape-2 {
+    top: 20%;
+    right: 50px;
+    animation-delay: 0.25s;
+}
+
+.shape-3 {
+    left: 40%;
+    bottom: 20%;
+    animation-delay: 0.5s;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(1turn);
+    }
+}
 
 
 
@@ -214,6 +246,7 @@ header nav ul li a:hover {
         width: 360px;
         height: 360px;
     }
+
 }
 
 @media (max-width: 991px) {
@@ -233,7 +266,7 @@ header nav ul li a:hover {
         font-size: var(--fontLarge);
     }
 
-    .hero .container .circle{
+    .hero .container .circle {
         max-width: 300px;
         max-height: 300px;
     }
@@ -253,7 +286,7 @@ header nav ul li a:hover {
         gap: 20px;
     }
 
-    .hero .container{
+    .hero .container {
         flex-direction: column;
     }
 }
