@@ -27,10 +27,7 @@ function validateEmail() {
     emailErrorEl.innerHTML = "Email is required";
     emailErrorEl.style.display = "block";
     return false;
-  } else if (
-    emailEl.value.indexOf("@") === -1 ||
-    emailEl.value.indexOf(".") === -1
-  ) {
+  } else if (emailEl.value.indexOf("@") <= 0) {
     emailErrorEl.innerHTML = "Email is invalid";
     emailErrorEl.style.display = "block";
     return false;
@@ -44,6 +41,10 @@ function validateEmail() {
 function validatePhone() {
   if (phoneEl.value === "") {
     phoneErrorEl.innerHTML = "Phone is required";
+    phoneErrorEl.style.display = "block";
+    return false;
+  } else if (isNaN(phoneEl.value) || phoneEl.value.length > 15) {
+    phoneErrorEl.innerHTML = "Phone is invalid";
     phoneErrorEl.style.display = "block";
     return false;
   } else {
