@@ -25,27 +25,38 @@
         <form action="#" method="">
             <div class="inputBox">
                 <label for="name">Name</label>
-                <input type="text" name="name" id="name" required>
+                <input type="text" name="name" id="name">
+                <p id="nameError" class="error"></p>
             </div>
             <div class="inputBox">
                 <label for="email">Email</label>
-                <input type="email" name="email" id="email" required>
+                <input type="email" name="email" id="email">
+                <p id="emailError" class="error"></p>
             </div>
             <div class="inputBox">
                 <label for="phone">Phone</label>
-                <input type="text" name="phone" id="phone" required>
+                <input type="text" name="phone" id="phone">
+                <p id="phoneError" class="error"></p>
             </div>
 
             <div class="inputBox">
                 <label for="message">Message</label>
-                <textarea name="message" id="message" required></textarea>
+                <textarea name="message" id="message"></textarea>
+                <p id="messageError" class="error"></p>
             </div>
             <div class="inputBox">
-                <button id="submitForm" type="submit">Submit</button>
+                <p id="error" class="error"></p>
+                <button id="submitBtn" type="submit">Submit</button>
             </div>
         </form>
+
+        <!-- <div class="alertBox">
+            <p id="alertMessage">Your form has been successfully sumbitted</p>
+        </div> -->
     </div>
 
+
+    <script src="JS/formValidation.js"></script>
 </body>
 
 </html>

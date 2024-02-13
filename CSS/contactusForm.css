@@ -119,3 +119,19 @@ button {
     border-color: var(--colorSky);
     color: var(--colorSky);
 }
+
+.error {
+    color: red;
+    font-size: 0.8rem;
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
+}
+
+.alertBox {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
