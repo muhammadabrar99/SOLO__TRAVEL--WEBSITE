@@ -79,11 +79,43 @@ function validateForm() {
   }
 }
 
+// remove error message on change
+nameEl.addEventListener("input", function () {
+  nameErrorEl.style.display = "none";
+});
+
+emailEl.addEventListener("input", function () {
+  emailErrorEl.style.display = "none";
+});
+
+phoneEl.addEventListener("input", function () {
+  phoneErrorEl.style.display = "none";
+});
+
+messageEl.addEventListener("input", function () {
+  messageErrorEl.style.display = "none";
+});
+
+// Show success message
+function showSuccessMessage() {
+  let successMessage = document.getElementById("success");
+  successMessage.style.display = "block";
+  successMessage.innerHTML = "Form submitted successfully";
+  setTimeout(function () {
+    successMessage.style.display = "none";
+  }, 3000);
+}
+
 // add event listener to button
 submitButton.addEventListener("click", function (event) {
   event.preventDefault();
   if (validateForm()) {
     errorEl.style.display = "none";
+    showSuccessMessage();
+    nameEl.value = "";
+    emailEl.value = "";
+    phoneEl.value = "";
+    messageEl.value = "";
   } else {
     errorEl.style.display = "block";
     errorEl.innerHTML = "Please fill the form correctly";
