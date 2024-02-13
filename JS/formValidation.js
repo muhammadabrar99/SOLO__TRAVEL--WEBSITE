@@ -27,6 +27,13 @@ function validateEmail() {
     emailErrorEl.innerHTML = "Email is required";
     emailErrorEl.style.display = "block";
     return false;
+  } else if (
+    emailEl.value.indexOf("@") === -1 ||
+    emailEl.value.indexOf(".") === -1
+  ) {
+    emailErrorEl.innerHTML = "Email is invalid";
+    emailErrorEl.style.display = "block";
+    return false;
   } else {
     emailErrorEl.style.display = "none";
     return true;
