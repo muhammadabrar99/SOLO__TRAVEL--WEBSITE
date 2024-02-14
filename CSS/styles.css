@@ -368,4 +368,14 @@ header nav ul li a:hover {
     header #menu_bars {
         margin: 0;
     }
+
+    .hero .shape-1{
+        display: none;
+    }
+
+    .btnGroup{
+        display: flex;
+        flex-direction: column;
+        gap: 1.2rem;
+    }
 }
