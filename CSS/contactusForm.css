@@ -134,3 +134,58 @@ button {
     margin-top: 0.2rem;
     margin-bottom: 0.2rem;
 }
+
+@media screen and (max-width: 768px){
+    .formContainer {
+        padding: 0 1rem;
+    }
+    .formContainer h1 {
+        font-size: var(--fontLarge);
+    }
+    .formContainer form {
+        width: 50%;
+    }
+    .formContainer form .inputBox {
+        gap: 0.5rem;
+    }
+    .formContainer form label {
+        font-size: var(--fontSmall);
+    }
+    .formContainer form input {
+        padding: 0.5rem;
+    }
+    .formContainer form textarea {
+        padding: 0.5rem;
+    }
+    .formContainer form button {
+        padding: 0.5rem;
+    }
+}
+
+@media  screen and (max-width: 425px) {
+    .formContainer {
+        padding: 0 1rem;
+    }
+    .formContainer h1 {
+        font-size: var(--fontMedium);
+    }
+    .formContainer form {
+        width: 100%;
+    }
+    .formContainer form .inputBox {
+        gap: 0.5rem;
+    }
+    .formContainer form label {
+        font-size: var(--fontSmall);
+    }
+    .formContainer form input {
+        padding: 0.5rem;
+    }
+    .formContainer form textarea {
+        padding: 0.5rem;
+    }
+    .formContainer form button {
+        padding: 0.5rem;
+    }
+    
+}
