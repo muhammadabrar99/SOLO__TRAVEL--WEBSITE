@@ -227,6 +227,55 @@ header nav ul li a:hover {
     }
 }
 
+/* Services Section */
+.services {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 50px 0;
+}
+
+.services .headings {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.services .cardWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 1rem;
+}
+
+.services .card {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .8rem;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+.services .card:hover {
+    transform: scale(1.05);
+}
+
+.services .card img {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+}
+
 
 
 
