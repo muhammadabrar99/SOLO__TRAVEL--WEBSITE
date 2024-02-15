@@ -296,6 +296,11 @@ header nav ul li a:hover {
         height: 360px;
     }
 
+    /* Services Section */
+    .services .cardWrapper {
+        gap: 1rem;
+    }
+
 }
 
 @media (max-width: 991px) {
@@ -320,6 +325,12 @@ header nav ul li a:hover {
         max-height: 300px;
     }
 
+    
+    /* Services Section */
+    .services .cardWrapper {
+        gap: 5rem;
+    }
+
 }
 
 @media (max-width: 768px) {
@@ -337,6 +348,25 @@ header nav ul li a:hover {
 
     .hero .container {
         flex-direction: column;
+    }
+
+       
+    /* Services Section */
+    .services .headings{
+        text-align: center;
+    }
+
+    .services .headings p{
+        font-size: 30px;
+    }
+
+    .services .cardWrapper {
+        gap: 2rem;
+        flex-direction: column;
+    }
+
+    .services .card {
+        width: 100%;
     }
 }
 
