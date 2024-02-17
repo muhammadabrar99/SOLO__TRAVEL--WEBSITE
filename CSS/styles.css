@@ -276,6 +276,69 @@ header nav ul li a:hover {
     object-fit: cover;
 }
 
+/* Destinations Section */
+.destinations {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem 0;
+}
+
+.destinations .destinationContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-wrap: wrap; */
+    gap: 2rem;
+    padding: 1rem;
+}
+
+.destinations .destinationContainer .destinationCard {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .8rem;
+    /* padding: 1rem; */
+    border-radius: 1rem;
+    box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+.destinations .destinationContainer .destinationCard:hover {
+    transform: scale(1.05);
+}
+
+.destinations .destinationContainer .destinationCard img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.destinations .destinationContainer .destinationCard .destinationContent {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    gap: .5rem;
+}
+
+.destinations .destinationContainer .destinationCard .destinationContent .content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.destinations .destinationContainer .destinationCard .destinationContent .content .rating {
+    font-size: 14px;
+    color: var(--colorYellow);
+}
+
 
 
 
@@ -325,7 +388,7 @@ header nav ul li a:hover {
         max-height: 300px;
     }
 
-    
+
     /* Services Section */
     .services .cardWrapper {
         gap: 5rem;
@@ -350,13 +413,13 @@ header nav ul li a:hover {
         flex-direction: column;
     }
 
-       
+
     /* Services Section */
-    .services .headings{
+    .services .headings {
         text-align: center;
     }
 
-    .services .headings p{
+    .services .headings p {
         font-size: 30px;
     }
 
@@ -448,11 +511,11 @@ header nav ul li a:hover {
         margin: 0;
     }
 
-    .hero .shape-1{
+    .hero .shape-1 {
         display: none;
     }
 
-    .btnGroup{
+    .btnGroup {
         display: flex;
         flex-direction: column;
         gap: 1.2rem;
