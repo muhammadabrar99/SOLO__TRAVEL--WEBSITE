@@ -7,10 +7,7 @@ menuBar.addEventListener("click", () => {
   navBar.classList.toggle("active");
 });
 
-window.onscroll = () => {
-  
-  
-};
+window.onscroll = () => {};
 
 // hide navbar on scroll
 let prevScrollpos = window.scrollY;
@@ -39,3 +36,24 @@ window.addEventListener("scroll", () => {
     navbarEl.style.top = "0";
   }, 500);
 });
+
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("destinationCard");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slideIndex++;
+  for (i = slideIndex; i < slideIndex + 3; i++) {
+    slides[i % slides.length].style.display = "block";
+  }
+  dots[slideIndex % dots.length].className += " active";
+  setTimeout(showSlides, 3000); // Change slide every 2 seconds
+}
